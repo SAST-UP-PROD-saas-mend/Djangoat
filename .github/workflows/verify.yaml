@@ -23,11 +23,11 @@ jobs:
           # An agent API key provided by Contrast (required).
           apiKey: ${{ secrets.CONTRAST__API__API_KEY }}
           # User authorization credentials provided by Contrast (required).
-          authHeader: 
+          authHeader: ${{ secrets.CONTRAST__AUTH_HEADER }}
           # The ID of your organization in Contrast (required).
           orgId: ${{ secrets.CONTRAST__API__ORGANIZATION_ID }}
           # The Artifact to Scan on the Contrast Platform.
-          artifact: 
+          artifact: /
           # The name of the host. Includes the protocol section of the URL (https://). Defaults to https://ce.contrastsecurity.com. (optional)
           apiUrl: ${{ secrets.CONTRAST__API__URL }}
           # The name of the project you want to scan in Contrast.
