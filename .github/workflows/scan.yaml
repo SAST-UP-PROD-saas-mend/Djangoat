@@ -28,7 +28,3 @@ jobs:
           apiOrgId: ${{ secrets.CONTRAST__API__ORGANIZATION_ID }}
           severity: high
           checks: true
-      - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-            sarif_file: results.sarif # The file name must be 'results.sarif', as this is what the Github Action will output
